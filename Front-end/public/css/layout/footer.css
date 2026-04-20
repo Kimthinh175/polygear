@@ -1,0 +1,140 @@
+/* footer */
+.lead-capture {
+  background: var(--bg-soft);
+  padding: 30px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid var(--border-color);
+}
+
+.lead-capture h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.lead-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lead-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid var(--gold-primary);
+  border-radius: var(--radius-sm);
+}
+
+.lead-form button {
+  padding: 12px 30px;
+}
+
+footer {
+  background: var(--black-primary);
+  color: #fff;
+  padding: 50px 0 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-col h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--gold-primary);
+    margin: 10px auto 0;
+  }
+}
+
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-col p,
+.footer-col ul li {
+  color: #ccc;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.footer-col ul li a:hover {
+  color: var(--gold-primary);
+}
+
+.hotline-highlight {
+  font-size: 24px;
+  color: var(--gold-primary);
+  font-weight: 700;
+  display: block;
+  margin: 5px 0 15px;
+}
+
+.bottom-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+/* floating actions */
+.floating-actions {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.float-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.float-zalo {
+  background: #0084ff;
+}
+
+.float-hotline {
+  background: #ff5722;
+}

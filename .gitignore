@@ -1,0 +1,22 @@
+# Bỏ qua thư mục thư viện (rất nặng)
+node_modules/
+vendor/
+postman/
+
+# Bỏ qua các file chứa mật khẩu, cấu hình nhạy cảm
+.env
+.env.local
+
+# Bỏ qua các file sinh ra khi chạy code hoặc file log
+npm-debug.log
+yarn-error.log
+*.log
+
+# Bỏ qua file rác của hệ điều hành
+.DS_Store
+Thumbs.db
+
+README.md
+# Security: Ignore sensitive files
+Back-end/API-app/firebase-service-account.json
+*.sql

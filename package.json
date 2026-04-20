@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build:css": "tailwindcss -i ./Front-end/public/css/input.css -o ./Front-end/public/css/tailwind.css",
+    "watch:css": "tailwindcss -i ./Front-end/public/css/input.css -o ./Front-end/public/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {
+    "firebase": "^12.11.0"
+  }
+}

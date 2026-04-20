@@ -1,0 +1,221 @@
+/* css reset & base */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* container của form */
+.auth-box {
+  background: #fff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+/* tiêu đề */
+h2 {
+  margin: 0 0 5px 0;
+  color: #1a1a1a;
+  font-size: 24px;
+}
+p.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.verify {
+  margin: 8px;
+}
+/* input */
+.input-group {
+  margin-bottom: 4px;
+}
+input[type="tel"],
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+input:focus {
+  border-color: #007bff;
+}
+
+/* box nhập otp (định dạng chữ số to, thưa) */
+#otp {
+  letter-spacing: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* buttons */
+.btn-main {
+  width: 100%;
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-main:hover {
+  background: #0056b3;
+}
+
+/* google button */
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+.btn-google:hover {
+  background: #f9f9f9;
+}
+.btn-google img {
+  width: 20px;
+}
+
+/* đường kẻ "hoặc" */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #888;
+  font-size: 13px;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+.divider:not(:empty)::before {
+  margin-right: 0.25em;
+}
+.divider:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+/* chuyển step (ẩn/hiện) */
+.step {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+.step.active {
+  display: block;
+}
+
+/* nút quay lại */
+.back-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* container chứa input (để dòng lỗi nằm ngay dưới) */
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.input-group .active {
+  margin-bottom: 4px;
+}
+/* style cho dòng chữ báo lỗi */
+.error-text {
+  color: #ff4d4f; /* màu đỏ của ant design, nhìn rất sang */
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  /* hiệu ứng mọc ra mượt mà */
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* hiệu ứng fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hiệu ứng rung rinh khi nhập sai (shake) */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+}
+
+.shake {
+  animation: shake 0.3s ease-in-out;
+  border-color: #ff4d4f !important; /* ép viền đỏ khi rung */
+}

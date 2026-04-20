@@ -1,0 +1,345 @@
+/* admin_list_variant.css layout grid for variant row cards, column headers, and misc */
+
+/* ── shared column grid (header + row cards must match) ───── */
+/* col widths (mirrors the php header): [checkbox 40px] [img 72px] [name flex] [sku 165px] [cat 130px] [price 130px] [stock 100px] [actions 160px] */
+
+/* ── column header row ────────────────────────────────────── */
+.variant-header-row {
+    display: grid;
+    grid-template-columns: 40px 72px 1fr 165px 130px 130px 100px 90px;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-bottom: 0.35rem;
+    gap: 0;
+}
+
+.variant-header-row > div {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    padding: 0 0.5rem;
+}
+
+.variant-header-row .vhcol-price,
+.variant-header-row .vhcol-stock,
+.variant-header-row .vhcol-actions {
+    text-align: right;
+}
+
+/* ── variant row card ─────────────────────────────────────── */
+.variant-row-card {
+    display: grid;
+    grid-template-columns: 40px 72px 1fr 165px 130px 130px 100px 90px;
+    align-items: center;
+    gap: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.65rem 0.5rem;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    cursor: default;
+    min-height: 72px;
+}
+
+.variant-row-card:hover {
+    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-1px);
+}
+
+/* ── generic column cell ─────────────────────────────────── */
+.vrc-col {
+    padding: 0 0.5rem;
+    overflow: hidden;
+    min-width: 0;
+}
+
+/* ── checkbox col ────────────────────────────────────────── */
+.vrc-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── image col ───────────────────────────────────────────── */
+.vrc-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── name col ────────────────────────────────────────────── */
+.vrc-name {
+    padding-left: 0.75rem;
+}
+
+.vrc-name-title {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--text-main);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vrc-name-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ── sku col ─────────────────────────────────────────────── */
+.vrc-sku code {
+    font-size: 0.78rem;
+    color: #334155;
+    background: #f1f5f9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.vrc-sku code span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vrc-sku .copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    padding: 0;
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    transition: color 0.2s;
+}
+
+.vrc-sku .copy-btn:hover { color: var(--primary); }
+
+/* ── category col ────────────────────────────────────────── */
+.vrc-cat {
+    display: flex;
+    align-items: center;
+}
+
+.vrc-cat-badge {
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* ── price col ───────────────────────────────────────────── */
+.vrc-price {
+    text-align: right;
+}
+
+.vrc-price-val {
+    font-weight: 800;
+    font-size: 0.92rem;
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+/* ── stock col ───────────────────────────────────────────── */
+.vrc-stock {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vrc-stock-inner {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+    padding: 0.25rem 0.4rem;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
+
+.vrc-stock-inner:hover {
+    background: var(--primary-light);
+}
+
+.vrc-stock-qty {
+    font-weight: 700;
+    font-size: 0.88rem;
+    white-space: nowrap;
+}
+
+.vrc-stock-min {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #d97706;
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+    border-radius: 20px;
+    padding: 0.05rem 0.45rem;
+    white-space: nowrap;
+}
+
+/* ── actions col ─────────────────────────────────────────── */
+.vrc-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: stretch;
+    padding-right: 0.5rem;
+}
+
+.vrc-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.vrc-action-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.vrc-action-edit {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+.vrc-action-edit:hover {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.vrc-action-stop {
+    background: #fff1f2;
+    color: #dc2626;
+    border-color: #fecaca;
+}
+.vrc-action-stop:hover {
+    background: #dc2626;
+    color: #fff;
+    border-color: #dc2626;
+}
+
+.vrc-action-start {
+    background: #fefce8;
+    color: #92400e;
+    border-color: #fde68a;
+}
+.vrc-action-start:hover {
+    background: #d97706;
+    color: #fff;
+    border-color: #d97706;
+}
+
+/* ── pagination ──────────────────────────────────────────── */
+.pagination {
+    display: flex;
+    list-style: none;
+    gap: 0.25rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-link {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-main);
+    background: var(--surface);
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.page-link:hover { background: var(--primary); color: white; border-color: var(--primary); }
+.page-item.active .page-link { background: var(--primary); color: white; border-color: var(--primary); }
+.page-item.disabled .page-link { color: var(--text-muted); pointer-events: none; background: var(--surface); }
+
+/* ── search box ──────────────────────────────────────────── */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.5rem 1rem;
+    flex: 1;
+    min-width: 220px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.search-box i { color: var(--text-muted); margin-right: 0.5rem; }
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+
+/* ── misc utilities (used in table but kept here) ─────────── */
+.badge { padding: 0.25rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+.badge-active   { background-color: #d1fae5; color: #065f46; }
+.badge-inactive { background-color: #fee2e2; color: #991b1b; }
+
+.truncate-cell { max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; vertical-align: middle; }
+
+/* ── responsive: collapse to scrollable on small screens ─── */
+@media (max-width: 900px) {
+    .variant-row-card,
+    .variant-header-row {
+        grid-template-columns: 40px 60px 1fr 140px 110px 110px 90px 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .variant-row-card {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 0.85rem;
+    }
+
+    .variant-header-row { display: none; }
+
+    .vrc-col { padding: 0; overflow: visible; }
+    .vrc-check { justify-content: flex-start; }
+    .vrc-price, .vrc-stock, .vrc-actions { text-align: left; justify-content: flex-start; }
+}

@@ -1,0 +1,5 @@
+RewriteEngine On
+
+#  ?endpoint= chuỗi sau đoạn Back-end/bla-bla/bla-bla
+#  $GET_['endpoint']= 'bla-bla/bla-bla'
+RewriteRule ^(.*)$ index.php?endpoint=$1 [QSA,L]

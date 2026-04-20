@@ -1,0 +1,21 @@
+# Enable rewrite
+RewriteEngine On
+RewriteBase /
+
+# 1. Nếu là file hoặc thư mục thực tế đang tồn tại -> Không chuyển hướng
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Ưu tiên các file Service Worker (đảm bảo MIME type JS)
+RewriteRule ^firebase-messaging-sw\.js$ - [L]
+RewriteRule ^Front-end/firebase-messaging-sw\.js$ - [L]
+
+DirectoryIndex Front-end/index.php
+
+# Pretty URL cho các request còn lại, loại trừ các file tĩnh có đuôi mở rộng
+RewriteCond %{REQUEST_URI} !\.(js|css|png|jpg|jpeg|gif|ico|svg|webp|woff|woff2|ttf|eot)$ [NC]
+RewriteRule ^(.*)$ Front-end/index.php?url=$1 [QSA,L,B]
+
+# Default charset
+AddDefaultCharset UTF-8

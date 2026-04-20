@@ -1,0 +1,276 @@
+[
+  {
+    "code": "ram",
+    "cate_name": "RAM",
+    "name": "RAM PC ADATA XPG D50 RGB 16GB (1x16GB) 3200MHz DDR4 - trắng",
+    "brand_id": "1",
+    "price": "2000",
+    "stock": "2",
+    "main_image_url": "img\/products\/product1.webp",
+    "sku": "RAM-PC-ADATA-XPG-D50-RGB-16GB-3200MHz-DDR4-16GB-TRANG",
+    "status": "active",
+    "specs": [
+      { "spec_value": "3200MHz", "spec_code": "BUS_RAM" },
+      { "spec_value": "1.35V - 1.5V", "spec_code": "DIEN_AP" },
+      { "spec_value": "16GB", "spec_code": "DUNG_LUONG" },
+      { "spec_value": "ADATA", "spec_code": "HANG_SX" },
+      { "spec_value": "DIMM (PC, Desktop)", "spec_code": "HO_TRO" },
+      { "spec_value": "133.35 x 40 x 8mm", "spec_code": "KICH_THUOC" },
+      { "spec_value": "DDR4", "spec_code": "LOAI_RAM" },
+      { "spec_value": "46g", "spec_code": "TRONG_LUONG" }
+    ]
+  },
+  {
+    "code": "ram",
+    "cate_name": "RAM",
+    "name": "RAM PC ADATA XPG D50 RGB 8GB (1x8GB) 3200MHz DDR4 - xám",
+    "brand_id": "1",
+    "price": "2390000",
+    "stock": "4",
+    "main_image_url": "img\/products\/product2.webp",
+    "sku": "RAM-PC-ADATA-XPG-D50-RGB-8GB-3200MHz-DDR4-8GB-XAM",
+    "status": "active",
+    "specs": [
+      { "spec_value": "3200MHz", "spec_code": "BUS_RAM" },
+      { "spec_value": "1.35V - 1.5V", "spec_code": "DIEN_AP" },
+      { "spec_value": "8GB", "spec_code": "DUNG_LUONG" },
+      { "spec_value": "ADATA", "spec_code": "HANG_SX" },
+      { "spec_value": "DIMM (PC, Desktop)", "spec_code": "HO_TRO" },
+      { "spec_value": "133.35 x 40 x 8mm", "spec_code": "KICH_THUOC" },
+      { "spec_value": "DDR4", "spec_code": "LOAI_RAM" },
+      { "spec_value": "46g", "spec_code": "TRONG_LUONG" }
+    ]
+  },
+  {
+    "code": "ram",
+    "cate_name": "RAM",
+    "name": "RAM PC ADATA XPG D50 RGB 16GB (1x16GB) 3200MHz DDR4 - xám",
+    "brand_id": "1",
+    "price": "3990000",
+    "stock": "12",
+    "main_image_url": "img\/products\/product1.webp",
+    "sku": "RAM-PC-ADATA-XPG-D50-RGB-16GB-3200MHz-DDR4-16GB-XAM",
+    "status": "active",
+    "specs": [
+      { "spec_value": "3200MHz", "spec_code": "BUS_RAM" },
+      { "spec_value": "1.35V - 1.5V", "spec_code": "DIEN_AP" },
+      { "spec_value": "16GB", "spec_code": "DUNG_LUONG" },
+      { "spec_value": "ADATA", "spec_code": "HANG_SX" },
+      { "spec_value": "DIMM (PC, Desktop)", "spec_code": "HO_TRO" },
+      { "spec_value": "133.35 x 40 x 8mm", "spec_code": "KICH_THUOC" },
+      { "spec_value": "DDR4", "spec_code": "LOAI_RAM" },
+      { "spec_value": "46g", "spec_code": "TRONG_LUONG" }
+    ]
+  },
+  {
+    "code": "ram",
+    "cate_name": "RAM",
+    "name": "RAM PC ADATA XPG D50 RGB 8GB (1x8GB) 3200MHz DDR4 - trắng",
+    "brand_id": "1",
+    "price": "2390000",
+    "stock": "6",
+    "main_image_url": "img\/products\/product2.webp",
+    "sku": "RAM-PC-ADATA-XPG-D50-RGB-8GB-3200MHz-DDR4-8GB-TRANG",
+    "status": "active",
+    "specs": [
+      { "spec_value": "3200MHz", "spec_code": "BUS_RAM" },
+      { "spec_value": "1.35V - 1.5V", "spec_code": "DIEN_AP" },
+      { "spec_value": "8GB", "spec_code": "DUNG_LUONG" },
+      { "spec_value": "ADATA", "spec_code": "HANG_SX" },
+      { "spec_value": "DIMM (PC, Desktop)", "spec_code": "HO_TRO" },
+      { "spec_value": "133.35 x 40 x 8mm", "spec_code": "KICH_THUOC" },
+      { "spec_value": "DDR4", "spec_code": "LOAI_RAM" },
+      { "spec_value": "46g", "spec_code": "TRONG_LUONG" }
+    ]
+  },
+  {
+    "code": "cpu",
+    "cate_name": "CPU",
+    "name": "CPU Intel Core i5 CPU Intel Core i5-12400F (TRAY)",
+    "brand_id": "2",
+    "price": "3990000",
+    "stock": "1",
+    "main_image_url": "img\/products\/product3.webp",
+    "sku": "CPU-INTEL-CORE-I5-12400F-TRAY",
+    "status": "active",
+    "specs": [
+      {
+        "spec_value": "Up to DDR5 4800 MT\/s, Up to DDR4 3200 MT\/s, Tối đa 128 GB",
+        "spec_code": "BO_NHO_HO_TRO"
+      },
+      { "spec_value": "18 MB Intel Smart Cache", "spec_code": "CACHE" },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      {
+        "spec_value": "Công nghệ Intel® Turbo Boost 2.0, Speed Shift, Deep Learning Boost, Intel® 64, SpeedStep® nâng cao",
+        "spec_code": "CONG_NGHE_HO_TRO"
+      },
+      {
+        "spec_value": "65 W (Tối đa 117 W)",
+        "spec_code": "DIEN_NANG_TIEU_THU"
+      },
+      { "spec_value": "Core i5", "spec_code": "DONG_SAN_PHAM" },
+      { "spec_value": "Intel", "spec_code": "HANG_SX" },
+      { "spec_value": "5.0 và 4.0", "spec_code": "PHIEN_BAN_PCI_EXPRESS" },
+      { "spec_value": "FCLGA1700", "spec_code": "SOCKET" },
+      { "spec_value": "12", "spec_code": "SO_LUONG" },
+      { "spec_value": "6", "spec_code": "SO_NHAN" },
+      { "spec_value": "Intel thế hệ 12", "spec_code": "THE_HE_CPU" },
+      { "spec_value": "2.50 GHz - 4.40 GHz", "spec_code": "TOC_DO_XU_LY" },
+      { "spec_value": "7.5 MB", "spec_code": "TONG_BO_NHO_DEM_L2" }
+    ]
+  },
+  {
+    "code": "cpu",
+    "cate_name": "CPU",
+    "name": "CPU Intel Core i5 CPU Intel Core i5-12400F",
+    "brand_id": "2",
+    "price": "4290000",
+    "stock": "2",
+    "main_image_url": "img\/products\/product4.webp",
+    "sku": "CPU-INTEL-CORE-I5-12400F",
+    "status": "active",
+    "specs": [
+      {
+        "spec_value": "DDR4 3200 MT\/s, DDR5 4800 MT\/s, Tối đa 128 GB",
+        "spec_code": "BO_NHO_HO_TRO"
+      },
+      { "spec_value": "L1: 18 MB, L2: 7.5 MB", "spec_code": "CACHE" },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      {
+        "spec_value": "Intel® 64, Intel® Thread Director, Hỗ trợ bộ nhớ Intel® Optane, Công nghệ theo dõi nhiệt, Công nghệ Intel® Turbo Boost 2.0, Công nghệ Intel SpeedStep® nâng cao, Intel® Gaussian & Neural Accelerator 3.0",
+        "spec_code": "CONG_NGHE_HO_TRO"
+      },
+      {
+        "spec_value": "65 W (Tối đa 117 W)",
+        "spec_code": "DIEN_NANG_TIEU_THU"
+      },
+      { "spec_value": "Core i5", "spec_code": "DONG_SAN_PHAM" },
+      { "spec_value": "Intel", "spec_code": "HANG_SX" },
+      { "spec_value": "4.0, 5.0", "spec_code": "PHIEN_BAN_PCI_EXPRESS" },
+      { "spec_value": "LGA 1700", "spec_code": "SOCKET" },
+      { "spec_value": "12", "spec_code": "SO_LUONG" },
+      { "spec_value": "6", "spec_code": "SO_NHAN" },
+      { "spec_value": "Intel thế hệ 12", "spec_code": "THE_HE_CPU" },
+      { "spec_value": "2.50 GHz - 4.40 GHz", "spec_code": "TOC_DO_XU_LY" }
+    ]
+  },
+  {
+    "code": "cpu",
+    "cate_name": "CPU",
+    "name": "CPU Intel Core i5 CPU Intel Core i5 13400",
+    "brand_id": "2",
+    "price": "4990000",
+    "stock": "5",
+    "main_image_url": "img\/products\/product5.webp",
+    "sku": "CPU-INTEL-CORE-I5-13400",
+    "status": "active",
+    "specs": [
+      { "spec_value": "128 GB (Max)", "spec_code": "BO_NHO_HO_TRO" },
+      { "spec_value": "20 MB", "spec_code": "CACHE" },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      { "spec_value": "Đồ họa Intel UHD 730", "spec_code": "CHIP_DO_HOA" },
+      { "spec_value": "65 W", "spec_code": "DIEN_NANG_TIEU_THU" },
+      { "spec_value": "Core i5", "spec_code": "DONG_SAN_PHAM" },
+      { "spec_value": "INTEL", "spec_code": "HANG_SX" },
+      { "spec_value": "LGA 1700", "spec_code": "SOCKET" },
+      { "spec_value": "16", "spec_code": "SO_LUONG" },
+      { "spec_value": "10", "spec_code": "SO_NHAN" },
+      { "spec_value": "Intel thế hệ 13", "spec_code": "THE_HE_CPU" },
+      { "spec_value": "3.3 GHz - 4.6 GHz", "spec_code": "TOC_DO_XU_LY" }
+    ]
+  },
+  {
+    "code": "cpu",
+    "cate_name": "CPU",
+    "name": "CPU Intel Core i5 CPU Intel Core i5 14400",
+    "brand_id": "2",
+    "price": "6490000",
+    "stock": "8",
+    "main_image_url": "img\/products\/product6.webp",
+    "sku": "CPU-INTEL-CORE-I5-14400",
+    "status": "active",
+    "specs": [
+      { "spec_value": "L2: 9.5 MB, L3: 20 MB", "spec_code": "CACHE" },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      { "spec_value": "65W", "spec_code": "DIEN_NANG_TIEU_THU" },
+      { "spec_value": "Core i5", "spec_code": "DONG_SAN_PHAM" },
+      { "spec_value": "INTEL", "spec_code": "HANG_SX" },
+      { "spec_value": "LGA 1700", "spec_code": "SOCKET" },
+      { "spec_value": "20", "spec_code": "SO_LUONG" },
+      { "spec_value": "14", "spec_code": "SO_NHAN" },
+      { "spec_value": "Intel thế hệ 14", "spec_code": "THE_HE_CPU" },
+      { "spec_value": "2.5 - 4.7 GHz", "spec_code": "TOC_DO_XU_LY" }
+    ]
+  },
+  {
+    "code": "cpu",
+    "cate_name": "CPU",
+    "name": "CPU Intel Core i5 CPU Intel Core i5 14400F",
+    "brand_id": "2",
+    "price": "4990000",
+    "stock": "5",
+    "main_image_url": "img\/products\/product7.webp",
+    "sku": "CPU-INTEL-CORE-I5-14400F",
+    "status": "active",
+    "specs": [
+      { "spec_value": "L2: 9.5 MB, L3: 20 MB", "spec_code": "CACHE" },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      { "spec_value": "65W", "spec_code": "DIEN_NANG_TIEU_THU" },
+      { "spec_value": "Core i5", "spec_code": "DONG_SAN_PHAM" },
+      { "spec_value": "INTEL", "spec_code": "HANG_SX" },
+      { "spec_value": "LGA 1700", "spec_code": "SOCKET" },
+      { "spec_value": "20", "spec_code": "SO_LUONG" },
+      { "spec_value": "14", "spec_code": "SO_NHAN" },
+      { "spec_value": "Intel thế hệ 14", "spec_code": "THE_HE_CPU" },
+      { "spec_value": "2.5 - 4.7 GHz", "spec_code": "TOC_DO_XU_LY" }
+    ]
+  },
+  {
+    "code": "mainboard",
+    "cate_name": "Mainboard",
+    "name": "Mainboard MSI Pro H610M-S DDR4 Mainboard MSI Pro H610M-S DDR4",
+    "brand_id": "1",
+    "price": "2490000",
+    "stock": "8",
+    "main_image_url": "img\/products\/product8.webp",
+    "sku": "MAINBOARD-MSI-PRO-H610M-S-DDR4",
+    "status": "active",
+    "specs": [
+      {
+        "spec_value": "Realtek® ALC897 Codec, Âm thanh độ phân giải cao 7.1 kênh",
+        "spec_code": "AM_THANH"
+      },
+      {
+        "spec_value": "2 x DDR4, dung lượng tối đa 64GB, Hỗ trợ DDR4 với các tốc độ 1866\/ 2133\/ 2400\/ 2667\/ 2800\/ 2933\/ 3000\/ 3066\/ 3200 MHz theo chuẩn JEDEC",
+        "spec_code": "BUS_RAM"
+      },
+      { "spec_value": "Intel", "spec_code": "CHIPSET" },
+      {
+        "spec_value": "1 x HDMI™, 2 x USB 3.2 Gen 1 5Gbps (Type-A), 4 x USB 2.0, 1 x LAN port, 3 x Audio Connectors",
+        "spec_code": "CONG_IO_SAU"
+      },
+      {
+        "spec_value": "1 x đầu nối nguồn chính (ATX_PWR)\n1 x đầu nối nguồn CPU (CPU_PWR)\n1 x chân cắm quạt CPU\n1 x chân cắm quạt hệ thống",
+        "spec_code": "CONG_IO_TRONG"
+      },
+      { "spec_value": "1 x HDMI", "spec_code": "CONG_XUAT_HINH" },
+      { "spec_value": "64GB", "spec_code": "DUNG_LUONG_RAM_TOI_DA" },
+      { "spec_value": "MSI", "spec_code": "HANG_SX" },
+      {
+        "spec_value": "Windows 11 64-bit, Windows 10 64-bit",
+        "spec_code": "HE_DIEU_HANH"
+      },
+      { "spec_value": "1 x PCI-E x16, 1 x PCI-E x1", "spec_code": "KHE_PCI" },
+      { "spec_value": "2", "spec_code": "KHE_RAM_TOI_DA" },
+      { "spec_value": "M-ATX", "spec_code": "KICH_THUOC" },
+      { "spec_value": "DDR4", "spec_code": "KIEU_RAM_HO_TRO" },
+      { "spec_value": "Realtek® RTL8111H Gigabit LAN", "spec_code": "LAN" },
+      { "spec_value": "1 x M2, 2 x SATA 6GB\/s", "spec_code": "LUU_TRU" },
+      { "spec_value": "LGA 1700", "spec_code": "SOCKET" },
+      {
+        "spec_value": "4 x USB 2.0 (phía sau), 4 x USB 2.0 (phía trước), 2 x USB 5Gbps Type-A (phía sau), 2 x USB 5Gbps Type-A (phía trước)",
+        "spec_code": "SO_CONG_USB"
+      }
+    ]
+  }
+]

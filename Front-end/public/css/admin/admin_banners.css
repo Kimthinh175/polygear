@@ -1,0 +1,146 @@
+.banner-container {
+    width: 100%;
+}
+
+.banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.banner-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.banner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.banner-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: #f1f5f9;
+}
+
+.banner-info {
+    padding: 20px;
+}
+
+.banner-title {
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.banner-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-main { background: #e0f2fe; color: #0369a1; }
+.badge-side { background: #fef3c7; color: #92400e; }
+.badge-active { background: #dcfce7; color: #15803d; }
+.badge-hidden { background: #fee2e2; color: #b91c1c; }
+
+.banner-actions {
+    display: flex;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.btn-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--text-muted);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-icon.btn-delete:hover {
+    color: var(--danger);
+    border-color: var(--danger);
+    background: var(--danger-light);
+}
+
+/* modals are now globally styled in admin_style.css */
+
+
+/* image upload refinement */
+.image-upload-preview {
+    width: 100%;
+    aspect-ratio: 21/9; /* wider, less tall */
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #f1f5f9;
+}
+
+.image-upload-preview:hover {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+
+.image-upload-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* responsive gaps */
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}

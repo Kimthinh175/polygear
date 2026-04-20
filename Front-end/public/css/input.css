@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+/* evaluate relative paths mapping to where css is */
+@source "../../../";
+
+@theme {
+  --color-primary: #2a83e9;
+  --color-primary-dark: #1544b7;
+  --color-shopee-gray: #f5f5f5;
+  --color-shopee-success: #26aa99;
+}/* force dark mode to be class-based so os dark mode doesn't unexpectedly trigger styling */
+@custom-variant dark (&:is(.dark *));
