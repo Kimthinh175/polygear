@@ -7,10 +7,9 @@ if (!defined('SECURE_API_ACCESS')) {
 
 class promotions
 {
-    
-    // tự động dọn dẹp các chiến dịch hết hạn
-    // này phải chạy cron-job trên hosting
-     
+    /**
+     * Lazy Sync: Tự động dọn dẹp các chiến dịch hết hạn
+     */
     public static function autoSync()
     {
         $lockFile = ROOT_DIR . '/Back-end/cache/promo_sync.lock';
